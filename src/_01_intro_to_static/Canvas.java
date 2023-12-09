@@ -54,9 +54,11 @@ public class Canvas {
         gamePanel.repaint();
         frame.pack();
     }
-
+   
     public void addCircle(Circle circle) {
+    	
         circles.add(circle);
+       
 
         // Must place after adding new circle
         // no size - 1 to number starting from 1
@@ -86,7 +88,7 @@ public class Canvas {
             circles.get(num-1).radius = value;
             frame.repaint();
         });
-
+        
         sliderPanel.add(radiusSliderLabel);
         sliderPanel.add(radiusSlider);
         sliderPanel.add(colorSliderLabel);
